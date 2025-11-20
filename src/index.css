@@ -1,0 +1,45 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #0d6efd;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0a58ca;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+h1 {
+  font-size: 2.5em; /* Slightly smaller h1 for better fit */
+  line-height: 1.1;
+}
+
+/* Default button styles are mostly handled by Bootstrap */
+
+/* Animación para el icono de traducción */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
