@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/juegos",
+      "destination": "https://www.freetogame.com/api/games"
+    }
   ]
 }
