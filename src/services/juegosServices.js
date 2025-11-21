@@ -1,50 +1,58 @@
-//Usar esta url - En despliegues locales
-//const URL_BASE_API = "/api/games";
+const URL_API_JUEGOS = "/api/games";
+const URL_API_DETALLE = "/api/game";
 
-const URL_BASE_API = "https://www.freetogame.com/api/games";
-
+/**
+ * Obtener lista de juegos
+ * @param {Object} filtros
+ * @param {string} filtros.genero
+ * @param {string} filtros.plataforma
+ */
 export const obtenerJuegos = async ({ genero, plataforma }) => {
-
-    const url = new URL(URL_BASE_API);
-
-    if (genero) {
-        url.searchParams.append("category", genero);
-    }
-    if (plataforma) {
-        url.searchParams.append("platform", plataforma);
-    }
-
     try {
+        const url = new URL(URL_API_JUEGOS, window.location.origin);
+
+        if (genero) url.searchParams.append("category", genero);
+        if (plataforma) url.searchParams.append("platform", plataforma);
+
+        console.log("URL solicitada:", url.toString());
+
         const respuesta = await fetch(url.toString());
+
         if (!respuesta.ok) {
-            const errorData = await respuesta.json().catch(() => null);
-            const errorMessage = errorData?.status_message || `Error HTTP! estado: ${respuesta.status}`;
-            throw new Error(errorMessage);
+            throw new Error(`Error HTTP! estado: ${respuesta.status}`);
         }
+
         const data = await respuesta.json();
         return { data, error: null };
+
     } catch (error) {
         console.error("Error al obtener juegos:", error);
         return { data: [], error: error.message };
     }
 };
 
-export const obtenerDetalleJuego = async (id) => {
-    const url = new URL("https://www.freetogame.com/api/game");
-    url.searchParams.append("id", id);
 
+/**
+ * Obtener detalle de un juego por ID
+ */
+export const obtenerDetalleJuego = async (id) => {
     try {
+        const url = new URL(URL_API_DETALLE, window.location.origin);
+        url.searchParams.append("id", id);
+
+        console.log("URL de detalle:", url.toString());
+
         const respuesta = await fetch(url.toString());
+
         if (!respuesta.ok) {
-            const errorData = await respuesta.json().catch(() => null);
-            const errorMessage = errorData?.status_message || `Error HTTP! estado: ${respuesta.status}`;
-            throw new Error(errorMessage);
+            throw new Error(`Error HTTP! estado: ${respuesta.status}`);
         }
+
         const data = await respuesta.json();
         return { data, error: null };
+
     } catch (error) {
         console.error(`Error al obtener detalle del juego ${id}:`, error);
         return { data: null, error: error.message };
     }
 };
-
