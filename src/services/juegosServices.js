@@ -1,12 +1,11 @@
 //Usar esta url - En despliegues locales
 //const URL_BASE_API = "/api/games";
 
-//Para vercel
 const URL_BASE_API = "https://www.freetogame.com/api/games";
 
 export const obtenerJuegos = async ({ genero, plataforma }) => {
 
-    const url = new URL(URL_BASE_API, window.location.origin);
+    const url = new URL(URL_BASE_API);
 
     if (genero) {
         url.searchParams.append("category", genero);
@@ -31,7 +30,7 @@ export const obtenerJuegos = async ({ genero, plataforma }) => {
 };
 
 export const obtenerDetalleJuego = async (id) => {
-    const url = new URL("/api/game", window.location.origin);
+    const url = new URL("https://www.freetogame.com/api/game");
     url.searchParams.append("id", id);
 
     try {
@@ -48,3 +47,4 @@ export const obtenerDetalleJuego = async (id) => {
         return { data: null, error: error.message };
     }
 };
+
