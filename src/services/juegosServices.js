@@ -44,5 +44,3 @@ export const obtenerDetalleJuego = async (id) => {
         return { data: null, error: error.message };
     }
 };
-
-Este el servicio donde se consume la API
