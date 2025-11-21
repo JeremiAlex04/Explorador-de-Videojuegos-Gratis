@@ -1,4 +1,8 @@
-const URL_BASE_API = "/api/games";
+//Usar esta url - En despliegues locales
+//const URL_BASE_API = "/api/games";
+
+//Para vercel
+const URL_BASE_API = "https://www.freetogame.com/api/games";
 
 export const obtenerJuegos = async ({ genero, plataforma }) => {
 
