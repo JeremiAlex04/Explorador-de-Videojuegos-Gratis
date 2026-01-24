@@ -5,291 +5,410 @@
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-Una aplicación web moderna para buscar y explorar tus videojuegos favoritos.
+**Una aplicación web moderna y eficiente para descubrir y explorar el universo de los videojuegos**
 
-[Características](#-características) • [Instalación](#-instalación) • [Despliegue](#-construcción-y-despliegue)
-
----
+[Demo en Vivo](#) • [Características](#-características-principales) • [Instalación](#-inicio-rápido) • [Documentación](#-documentación)
 
 </div>
 
-## 📖 Acerca del Proyecto
+---
 
-**Buscador de Juegos** es una aplicación web interactiva que te permite explorar el mundo de los videojuegos de manera rápida y eficiente. Desarrollada con las últimas tecnologías de frontend, ofrece una experiencia de usuario fluida y moderna.
+## 📖 Sobre el Proyecto
+
+Buscador de Juegos es una aplicación web interactiva diseñada para facilitar la exploración del vasto mundo de los videojuegos. Con una interfaz intuitiva y rendimiento optimizado, permite a los usuarios descubrir títulos de forma rápida y eficiente.
+
+### 🎯 ¿Por qué usar esta aplicación?
+
+- Interfaz limpia y fácil de usar que prioriza la experiencia del usuario
+- Optimización para todos los dispositivos, desde móviles hasta escritorio
+- Arquitectura moderna que garantiza mantenibilidad y escalabilidad
+- Código bien estructurado ideal para aprender o contribuir
 
 ---
 
-## ✨ Características
+## ✨ Características Principales
 
-- 🔍 **Búsqueda Inteligente** - Encuentra videojuegos de manera rápida y precisa
-- 📱 **Diseño Responsivo** - Experiencia optimizada en todos los dispositivos
-- ⚡ **Rendimiento Ultra Rápido** - Gracias a la optimización de Vite
-- 🎨 **Interfaz Moderna** - UI atractiva construida con Bootstrap
-- 🚀 **Navegación Fluida** - Experiencia de usuario sin interrupciones
+| Característica | Descripción |
+|---------------|-------------|
+| 🔍 **Búsqueda Avanzada** | Sistema de búsqueda inteligente con filtros y sugerencias en tiempo real |
+| 📱 **100% Responsivo** | Diseño adaptable que funciona perfectamente en cualquier dispositivo |
+| ⚡ **Alto Rendimiento** | Carga ultrarrápida gracias a Vite y optimizaciones modernas |
+| 🎨 **UI/UX Moderna** | Interfaz atractiva con componentes de Bootstrap 5 personalizados |
+| 🌐 **SEO Optimizado** | Estructura pensada para mejorar la visibilidad en buscadores |
+| ♿ **Accesible** | Cumple con estándares WCAG para inclusividad |
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
 <table>
 <tr>
 <td align="center" width="250">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="60" height="60" alt="React"/>
 <br/><br/>
-<strong>React</strong>
+<strong>React 19</strong>
 <br/>
-<sub>Biblioteca de JavaScript para construir interfaces de usuario interactivas y componentes reutilizables</sub>
+<sub>Biblioteca líder para construir interfaces de usuario componetizadas y reactivas con el último sistema de hooks</sub>
 </td>
 <td align="center" width="250">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="60" height="60" alt="Vite"/>
 <br/><br/>
-<strong>Vite</strong>
+<strong>Vite 5</strong>
 <br/>
-<sub>Herramienta de construcción frontend de próxima generación con HMR instantáneo</sub>
+<sub>Build tool de próxima generación con HMR instantáneo y optimización automática de dependencias</sub>
 </td>
 <td align="center" width="250">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" width="60" height="60" alt="Bootstrap"/>
 <br/><br/>
 <strong>Bootstrap 5</strong>
 <br/>
-<sub>Framework CSS para desarrollo rápido y responsivo con componentes prediseñados</sub>
+<sub>Framework CSS responsive con sistema de grid flexible y componentes preconfigurados</sub>
 </td>
 </tr>
 </table>
 
----
+### Dependencias Adicionales
 
-## 📋 Requisitos Previos
-
-Antes de comenzar, asegúrate de tener instalado:
-
-| Herramienta | Versión Mínima | Link de Descarga |
-|-------------|----------------|------------------|
-| 🟢 Node.js | 18.x o superior | [Descargar](https://nodejs.org/) |
-| 📦 npm | 9.x o superior | Incluido con Node.js |
-
-> 💡 **Tip:** Verifica tu versión con `node -v` y `npm -v`
+- **React Router** - Navegación declarativa entre vistas
+- **Axios** - Cliente HTTP para peticiones a APIs
+- **PropTypes** - Validación de props en tiempo de desarrollo
 
 ---
 
-## 🚀 Instalación
+## 🚀 Inicio Rápido
 
-### Configuración Local
+### Prerrequisitos
 
-**1️⃣ Clonar el repositorio:**
+Asegúrate de tener instaladas las siguientes herramientas:
+
+| Herramienta | Versión Requerida | Verificar Instalación |
+|-------------|-------------------|-----------------------|
+| 🟢 Node.js | ≥ 18.0.0 | `node --version` |
+| 📦 npm | ≥ 9.0.0 | `npm --version` |
+| 🔧 Git | Última | `git --version` |
+
+> 💡 **Recomendación:** Usa [nvm](https://github.com/nvm-sh/nvm) para gestionar múltiples versiones de Node.js
+
+### Instalación
+
+**Paso 1: Clonar el repositorio**
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/tu-usuario/buscadorjuegos.git
 cd buscadorjuegos
 ```
 
-**2️⃣ Instalar dependencias:**
+**Paso 2: Instalar dependencias**
 ```bash
 npm install
 ```
 
-Este comando instalará todas las librerías necesarias definidas en `package.json`.
+**Paso 3: Configurar variables de entorno (opcional)**
+```bash
+cp .env.example .env
+# Edita .env con tus configuraciones
+```
 
----
-
-## 💻 Ejecución en Desarrollo
-
-**Iniciar el servidor de desarrollo:**
+**Paso 4: Iniciar el servidor de desarrollo**
 ```bash
 npm run dev
 ```
 
-La aplicación estará disponible en:
-```
-🌐 Local: http://localhost:5173/
-```
-
-> 📝 **Nota:** Si el puerto 5173 está ocupado, Vite asignará automáticamente otro puerto disponible.
-
-### Características del Modo Desarrollo
-
-- 🔥 Hot Module Replacement (HMR) - Cambios instantáneos sin recargar
-- 🐛 Source Maps - Depuración facilitada
-- ⚡ Inicio ultra rápido
+¡Listo! Abre tu navegador en `http://localhost:5173` 🎉
 
 ---
 
-## 📦 Construcción y Despliegue
+## 💻 Desarrollo
 
-### Build de Producción
+### Servidor de Desarrollo
 
-**1️⃣ Construir el proyecto:**
+```bash
+npm run dev
+```
+
+**Características del modo desarrollo:**
+
+- 🔥 **Hot Module Replacement (HMR)** - Cambios reflejados instantáneamente
+- 🐛 **Source Maps detallados** - Debugging simplificado
+- ⚡ **Inicio en < 1 segundo** - Gracias a ESBuild
+- 🔍 **Error Overlay** - Errores mostrados directamente en el navegador
+
+### Comandos Útiles
+
+```bash
+# Ejecutar linter
+npm run lint
+
+# Formatear código con Prettier
+npm run format
+
+# Ejecutar tests (si están configurados)
+npm run test
+
+# Analizar bundle size
+npm run analyze
+```
+
+---
+
+## 📦 Build y Producción
+
+### Crear Build de Producción
+
 ```bash
 npm run build
 ```
 
-Este comando:
-- ✅ Compila y optimiza el código
-- 📦 Genera la carpeta `dist/` con archivos listos para producción
-- 🗜️ Minifica y comprime los recursos
+**Optimizaciones automáticas:**
+- ✅ Minificación de JavaScript y CSS
+- 📦 Code splitting inteligente
+- 🗜️ Compresión de assets
+- 🌳 Tree shaking para eliminar código muerto
+- 🖼️ Optimización de imágenes
 
-**2️⃣ Previsualizar la construcción (Opcional):**
+**Salida:** Los archivos optimizados se generan en `/dist`
+
+### Vista Previa del Build
+
 ```bash
 npm run preview
 ```
 
-Esto te permite verificar la versión de producción localmente antes del despliegue.
+Sirve el build de producción en `http://localhost:4173` para testing final.
 
 ---
 
-### 🌐 Despliegue en GitHub Pages
+## 🌐 Despliegue
 
-#### Configuración Inicial
+### GitHub Pages
 
-**1️⃣ Configurar el base path:**
-
-Edita `vite.config.js`:
+**1. Configurar `vite.config.js`:**
 ```javascript
 export default {
-  base: '/nombre-del-repo/', // Reemplaza con el nombre de tu repositorio
+  base: '/buscadorjuegos/', // Nombre de tu repositorio
+  build: {
+    outDir: 'dist',
+  }
 }
 ```
 
-> ⚠️ **Importante:** Si tu repositorio es `usuario.github.io`, usa `base: '/'`
-
-**2️⃣ Instalar gh-pages:**
+**2. Instalar gh-pages:**
 ```bash
-npm install gh-pages --save-dev
+npm install -D gh-pages
 ```
 
-**3️⃣ Agregar scripts de despliegue:**
-
-Añade en `package.json`:
+**3. Agregar scripts en `package.json`:**
 ```json
 {
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   }
 }
 ```
 
-**4️⃣ Desplegar:**
+**4. Desplegar:**
 ```bash
 npm run deploy
 ```
 
-Tu aplicación estará disponible en:
-```
-https://tu-usuario.github.io/nombre-del-repo/
-```
+Tu app estará en: `https://tu-usuario.github.io/buscadorjuegos/`
 
 ---
 
-### 🚀 Otras Opciones de Despliegue
+### Otras Plataformas
 
-<table>
-<tr>
-<td align="center" width="200">
-<strong>Vercel</strong><br/>
-Despliegue automático desde Git
-<br/><br/>
-<a href="https://vercel.com">Ir a Vercel →</a>
-</td>
-<td align="center" width="200">
-<strong>Netlify</strong><br/>
-Hosting con CI/CD integrado
-<br/><br/>
-<a href="https://netlify.com">Ir a Netlify →</a>
-</td>
-<td align="center" width="200">
-<strong>Cloudflare Pages</strong><br/>
-Edge deployment global
-<br/><br/>
-<a href="https://pages.cloudflare.com">Ir a CF Pages →</a>
-</td>
-</tr>
-</table>
+<details>
+<summary><strong>🔷 Vercel (Recomendado)</strong></summary>
+
+1. Conecta tu repositorio en [vercel.com](https://vercel.com)
+2. Configura el comando de build: `npm run build`
+3. Directorio de salida: `dist`
+4. Deploy automático ✨
+
+</details>
+
+<details>
+<summary><strong>🔶 Netlify</strong></summary>
+
+1. Conecta tu repo en [netlify.com](https://netlify.com)
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+4. Deploy con CI/CD integrado
+
+</details>
+
+<details>
+<summary><strong>🔸 Cloudflare Pages</strong></summary>
+
+1. Conecta tu repositorio
+2. Framework preset: Vite
+3. Build command: `npm run build`
+4. Output directory: `dist`
+
+</details>
 
 ---
 
 ## 📂 Estructura del Proyecto
+
 ```
 buscadorjuegos/
 │
-├── 📁 src/                    # Código fuente de la aplicación
-│   ├── 📁 components/         # Componentes React reutilizables
-│   ├── 📁 pages/              # Páginas de la aplicación
-│   ├── 📁 services/           # Servicios y API calls
-│   ├── 📁 styles/             # Estilos personalizados
-│   ├── 📁 utils/              # Funciones de utilidad
-│   ├── App.jsx                # Componente principal
-│   └── main.jsx               # Punto de entrada de React
+├── 📁 public/                  # Assets estáticos
+│   ├── favicon.ico
+│   └── images/
 │
-├── 📁 public/                 # Archivos estáticos públicos
-│   └── assets/                # Imágenes, iconos, etc.
+├── 📁 src/                     # Código fuente
+│   ├── 📁 components/          # Componentes React
+│   │   ├── Header/
+│   │   ├── SearchBar/
+│   │   ├── GameCard/
+│   │   └── Footer/
+│   │
+│   ├── 📁 pages/               # Vistas principales
+│   │   ├── Home.jsx
+│   │   ├── GameDetails.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── 📁 hooks/               # Custom hooks
+│   │   ├── useGames.js
+│   │   └── useDebounce.js
+│   │
+│   ├── 📁 services/            # API y servicios
+│   │   └── gameService.js
+│   │
+│   ├── 📁 utils/               # Funciones auxiliares
+│   │   ├── constants.js
+│   │   └── helpers.js
+│   │
+│   ├── 📁 styles/              # Estilos globales
+│   │   ├── global.css
+│   │   └── variables.css
+│   │
+│   ├── App.jsx                 # Componente raíz
+│   ├── main.jsx                # Entry point
+│   └── router.jsx              # Configuración de rutas
 │
-├── 📄 index.html              # Punto de entrada HTML
-├── 📄 vite.config.js          # Configuración de Vite
-├── 📄 package.json            # Dependencias y scripts
-└── 📄 README.md               # Este archivo
+├── .env.example                # Variables de entorno ejemplo
+├── .gitignore                  # Archivos ignorados por Git
+├── index.html                  # HTML principal
+├── package.json                # Dependencias y scripts
+├── vite.config.js              # Configuración de Vite
+└── README.md                   # Este archivo
 ```
 
 ---
 
-## 🛠️ Scripts Disponibles
+## 🧪 Testing
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run dev` | Inicia el servidor de desarrollo |
-| `npm run build` | Crea el build de producción |
-| `npm run preview` | Previsualiza el build de producción |
-| `npm run deploy` | Despliega a GitHub Pages |
-| `npm run lint` | Ejecuta el linter (si está configurado) |
+```bash
+# Ejecutar tests unitarios
+npm run test
+
+# Tests con coverage
+npm run test:coverage
+
+# Tests en modo watch
+npm run test:watch
+```
 
 ---
 
-## 🤝 Contribuciones
+## 🤝 Contribuir
 
-Las contribuciones son bienvenidas y apreciadas. Para contribuir:
+¡Las contribuciones son bienvenidas! Sigue estos pasos:
 
-1. 🍴 Fork el proyecto
-2. 🌿 Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`)
-3. 💾 Commit tus cambios (`git commit -m 'Add: Nueva característica'`)
-4. 📤 Push a la rama (`git push origin feature/NuevaCaracteristica`)
-5. 🔀 Abre un Pull Request
+### Proceso de Contribución
+
+1. **Fork** el proyecto
+2. **Crea** una rama para tu feature
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit** tus cambios
+   ```bash
+   git commit -m 'Add: Nueva característica increíble'
+   ```
+4. **Push** a la rama
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Abre** un Pull Request
+
+### Guías de Estilo
+
+- Sigue las convenciones de código del proyecto (ESLint + Prettier)
+- Escribe mensajes de commit descriptivos siguiendo [Conventional Commits](https://www.conventionalcommits.org/)
+- Documenta funciones complejas con JSDoc
+- Añade tests para nuevas funcionalidades
+
+---
+
+## 📋 Roadmap
+
+- [ ] Implementar sistema de favoritos con persistencia local
+- [ ] Agregar modo oscuro/claro
+- [ ] Integración con API de videojuegos (RAWG, IGDB)
+- [ ] Sistema de filtros avanzados
+- [ ] Página de comparación de juegos
+- [ ] PWA con soporte offline
+- [ ] Internacionalización (i18n)
+
+---
+
+## 🐛 Reporte de Bugs
+
+¿Encontraste un problema? [Abre un issue](../../issues/new) con:
+
+- Descripción detallada del problema
+- Pasos para reproducirlo
+- Comportamiento esperado vs actual
+- Screenshots si aplica
+- Información del navegador/sistema
 
 ---
 
 ## 📝 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+**En resumen:** Puedes usar, modificar y distribuir este proyecto libremente, siempre que mantengas el aviso de copyright original.
 
 ---
 
-## 📧 Soporte
+## 👥 Autores
 
-¿Encontraste un bug o tienes una sugerencia?
+- **Tu Nombre** - *Desarrollo inicial* - [@tu-usuario](https://github.com/tu-usuario)
 
-- 🐛 [Reportar un problema](../../issues)
-- 💡 [Solicitar una característica](../../issues)
-- 📧 Contactar al equipo de desarrollo
+Ver la lista completa de [contribuidores](../../contributors) que participaron en este proyecto.
 
 ---
 
 ## 🙏 Agradecimientos
 
-- **React Team** - Por la increíble biblioteca
-- **Vite Team** - Por la herramienta de build más rápida
-- **Bootstrap** - Por los componentes de UI
+- **[React Team](https://react.dev/)** - Por revolucionar el desarrollo frontend
+- **[Evan You](https://github.com/yyx990803)** - Creador de Vite
+- **[Bootstrap Team](https://getbootstrap.com/)** - Por el framework CSS
+- **Comunidad Open Source** - Por el feedback y contribuciones
+
+---
+
+## 📞 Contacto y Soporte
+
+- 📧 Email: tu-email@ejemplo.com
+- 🐦 Twitter: [@tu_handle](https://twitter.com/tu_handle)
+- 💼 LinkedIn: [Tu Nombre](https://linkedin.com/in/tu-perfil)
+- 🌐 Portfolio: [tuportfolio.com](https://tuportfolio.com)
 
 ---
 
 <div align="center">
 
-**Desarrollado con 💙 y ☕ por la comunidad**
+### ⭐ Si este proyecto te resultó útil, considera darle una estrella
 
-⭐ Si te gusta este proyecto, ¡considera darle una estrella!
-
----
+**Hecho con ❤️ usando React + Vite**
 
 [⬆ Volver arriba](#-buscador-de-juegos)
 
